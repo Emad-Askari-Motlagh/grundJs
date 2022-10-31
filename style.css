@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+:root {
+  --head-back: #c89090;
+  --main-back: #383838;
+  --font-color: white;
+  --general-font-size: 25px;
+}
+html {
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10%;
+  background-color: var(--head-back);
+  color: var(--font-color);
+  width: 100%;
+  margin: auto;
+  font-size: var(--general-font-size);
+}
+h1 {
+  font-size: 33px;
+}
+main {
+  flex: 1;
+  width: 100%;
+  background-color: #383838;
+}
+
+.parent {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  height: 50vmin;
+}
+.tas {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 200;
+  height: 200;
+  overflow: visible;
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+  gap: 1em;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+#carts {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+
+  margin: auto;
+}
+#carts li {
+  background-color: beige;
+  padding: 2em;
+  height: 100px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+  flex-grow: 0;
+  list-style: none;
+  border: 1px solid lightgray;
+  outline: 1px solid lightgray;
+  outline-offset: -15px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+#carts .chosen-cart {
+  transform: scale(1.2);
+  background-color: #beb7b7;
+  transition: all 0.4s ease-in-out;
+}
+#carts .cards-icon1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-20%, 10%);
+}
+#carts .cards-icon2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(20%, -10%);
+}
+.tas-value {
+  background-color: tomato;
+  padding: 2em;
+  border-radius: 50px;
+}
+.tas-item {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  box-shadow: rgba(79, 75, 75, 0.835) 3px 3px 8px inset;
+  border-radius: 50%;
+  perspective: 1000px;
+}
+.button-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+footer button {
+  padding: 0.5rem 1.5rem;
+  border-width: 0;
+  transition: transform 0.1s ease-in-out;
+  background-color: tomato;
+  width: 80%;
+  font-size: 34px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 5px;
+}
+footer button:active {
+  transform: scale(0.95);
+}
